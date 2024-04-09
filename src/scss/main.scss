@@ -1,0 +1,202 @@
+@import "reset";
+@import "fonts";
+:root {
+  // шрифты
+  --main-font-size: 16px;
+  --main-title-font-size: 48px;
+  --main-font-family: Montserrat;
+  --view-width: 1920;
+
+  // основные цвета
+
+
+  // отступы
+  --section-side-padding: 40px;
+  --section-padding: var(--section-side-padding) 0 var(--section-side-padding) 0;
+
+  --section-side-margin: 20px;
+  --section-margin: var(--section-side-margin) 0 var(--section-side-margin) 0;;
+  // обертка
+  --wrapper-max-width: 1629px;
+  --wrapper-side-padding: 25px;
+  --wrapper-side-margin: auto;
+  --wrapper-padding: 0 var(--wrapper-side-padding) 0 var(--wrapper-side-padding);
+
+  // компоненты
+  // Кнопка
+  --button-color: var(--main-dark-color);
+  --button-background-color: var(--main-yellow-color);
+  --button-padding: 16px 24px;
+  --button-font-family: var(--main-font-family);
+
+  font-family: var(--main-font-family, Montserrat);
+  font-weight: 400;
+  // Единица измерения для верстки при помощи rem
+  // При разрешение 1920px  calc(100vw / 1920) = 1 px
+  // умножается на 10 для удобства верстки. 1 rem = 10px
+  font-size: var(--main-font-size, calc(100vw / var(--view-width, 1920) * 10));
+
+  scroll-behavior: smooth;
+
+  @media (max-width:1400px ) {
+    --main-title-font-size: 40px;
+    --main-title-sec-font-size: 32px;
+    --main-sub-title-font-size: 20px;
+    --section-side-padding: 32px;
+    --wrapper-max-width: 1240px;
+    --section-side-margin: 16px;
+  }
+
+  @media (max-width:820px ) {
+    --main-title-font-size: 32px;
+    --main-sub-title-font-size: 16px;
+    --section-side-padding: 24px;
+    --wrapper-max-width: 780px;
+}
+
+  @media (max-width:540px) {
+    --main-title-font-size: 20px;
+    --main-title-sec-font-size: 20px;
+    --main-sub-title-font-size: 14px;
+
+    --button-padding: 10px 12px;
+
+    --section-side-padding: 16px;
+    --wrapper-max-width: 520px;
+    --wrapper-side-padding: 25px;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  position: relative;
+  line-height: normal;
+
+  padding: var(--body-padding);
+  
+
+  background-color: var(--light-gray);
+  overflow: var(--body-overflow, auto);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  max-width: var(--wrapper-max-width);
+  width: 100%;
+  padding: var(--wrapper-padding);
+  margin: 0 auto;
+}
+// Кнопки
+.button {
+
+
+  & .button-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    &__text {
+    }
+
+    & svg {
+      display: flex;
+      align-items: center;
+      fill: var(--button-color);
+    }
+  }
+}
+
+// Инпуты
+.input-block {
+  --input-block-label-background-color: var(--white);
+  --input-block-label-color: var(--main-dark-color);
+  --input-block-input-color: var(--main-dark-color);
+  --input-block-input-background-color: var(--white);
+  --input-block-input-border-color: var(--dark-color-10);
+  --input-block-input-placeholder-color: var(--dark-color-50);
+  --input-block-transition: all 0.5s ease;
+  --input-block-input-font-size: 18px;
+  --input-block-label-font-size: 14px;
+
+  @media (max-width: 540px){
+    --input-block-input-font-size: 16px;
+    
+  }
+
+  position: relative;
+
+  width: 100%;
+  font-style: var(--main-font-family);
+  
+  &__label {
+
+  }
+
+  &__input {
+    
+  }
+
+  &.error {
+    --input-block-input-border-color: red;
+    --input-block-label-color: red;
+  }
+}
+
+.checkbox-block {
+  --checkbox-block-label-color: var(--dark-gray-color);
+  --checkbox-block-label-font-size: 16px;
+  --checkbox-block-height: 22px;
+  --checkbox-block-input-border-color: var(--dark-color-10);
+
+  @media (max-width: 840px){
+    --checkbox-block-height: 18px;
+    --checkbox-block-label-font-size: 14px;
+  }
+
+  cursor: pointer;
+
+  color: var(--checkbox-block-label-color);
+  &:has(.checkbox-block__input:checked) &__label::before {
+    opacity: 1;
+  }
+
+  &:has(.checkbox-block__input:checked) &__label::after {
+    border: 1px solid transparent;
+  }
+  
+  &__label {
+
+  }
+  &__input {
+    display: none;
+  }
+
+
+  &.error {
+    --checkbox-block-input-border-color: red;
+    // --input-block-label-color: red;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.title {
+
+}
+
+.sub-title {
+  
+}
+
+.list-item {
+  
+}
+@import "./footer";
+@import "./header";
