@@ -1,12 +1,12 @@
 @import "reset";
-@import "fonts";
+// @import "fonts";
 :root {
   // шрифты
   --main-font-size: 16px;
-  --main-title-font-size: 48px;
+  --main-title-font-size: 46px;
   --main-font-family: Montserrat;
   --view-width: 1920;
-
+  --middle-title: 40px;
   // основные цвета
 
 
@@ -25,9 +25,10 @@
   // компоненты
   // Кнопка
   --button-color: var(--main-dark-color);
-  --button-background-color: var(--main-yellow-color);
-  --button-padding: 16px 24px;
+  --button-background-color: #00E1DD;
+  --button-padding: 16px 28px;
   --button-font-family: var(--main-font-family);
+  --btn-padding-small: 12px 28px;
 
   font-family: var(--main-font-family, Montserrat);
   font-weight: 400;
@@ -92,8 +93,14 @@ body {
 }
 // Кнопки
 .button {
-
-
+  color: var(--button-color);
+  background: var(--button-background-color);
+  padding: var(--button-padding);
+  display: inline-block;
+  width: fit-content;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
   & .button-block {
     display: flex;
     align-items: center;
@@ -108,8 +115,14 @@ body {
       fill: var(--button-color);
     }
   }
+  &_small{
+    padding: var(--btn-padding-small);
+  }
 }
-
+.middle-title{
+  font-size: var(--middle-title);
+  font-weight: 700;
+}
 // Инпуты
 .input-block {
   --input-block-label-background-color: var(--white);

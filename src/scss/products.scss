@@ -1,0 +1,86 @@
+.products__container{
+    padding: 140px 0;
+}
+.products__category{
+    &_block{
+        align-items: center;
+        gap: 12px;
+    }
+    &_el{
+       background: #D9D9D9;
+       width: 120px;
+       height: 120px;
+       border-radius: 12px;
+    }
+    &_name{
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+.items{
+    padding-top: 64px;
+    &__card{
+        gap: 16px;
+        padding: 24px;
+        background: white;
+        border-radius: 12px;
+        align-items: center;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__img{
+        width: 100%;
+        max-width: 200px;
+        height: 236px;
+        border-radius: 12px;
+        background: #D9D9D9;
+    }
+    &__img img{
+        display: none;
+    }
+    &__color-section{
+        gap: 15px;
+    }
+    &__color{
+        width: 24px;
+        height: 24px;
+        border-radius: 100px;
+        background: #585E6E;
+        box-shadow: #000000 20.4%;
+        cursor: pointer;
+    }
+    &__color.active{
+        border: #00E1DD solid 2px;
+    }
+    &__memory_section{
+        width: 100%;
+        border: #DEDEDE solid 1px;
+        justify-content: space-between;
+        border-radius: 12px;
+    }
+    &__memory_value{
+        font-size: 12px;
+        font-weight: 400;
+        color: #0D0225;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 26px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    &__memory_value.active{
+        color: white;
+        background: #0D0225;
+        border-radius: 12px;
+
+    }
+    &__price-section{
+        align-items: center;
+        width: 100%;
+        margin-top: 16px;
+    }
+}
