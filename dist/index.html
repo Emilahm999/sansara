@@ -9,11 +9,11 @@
    <meta name="keywords" content="">
    <meta name="robots" content="index, nofolow">
    <meta name="generator" content="">
-   <link rel="stylesheet" href="css/style.css?_v=20240411165156">
-   <link rel="stylesheet" href="css/main.css?_v=20240411165156">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240411165156" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240411165156"/>
-   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240411165156"/> -->
+   <link rel="stylesheet" href="css/style.css?_v=20240416170826">
+   <link rel="stylesheet" href="css/main.css?_v=20240416170826">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240416170826" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?_v=20240416170826"/>
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240416170826"/> -->
    <title>Заголовок</title>
 </head>
 
@@ -27,23 +27,39 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header-fixed">
+    <div class="header-fixed header">
         <div class="container">
             <div class="header-nav__section flex-row">
-                <div class="logo_header">
-                    <img src="img/logo.png" alt="logo">
+                <div class="header-left_section flex">
+                    <div class="header-logo_header">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="header-nav_menu flex">
+                        <a href="/" class="header-nav_link">О нас</a>
+                        <a href="/" class="header-nav_link">Сроки</a>
+                        <div class="header-nav_link menu flex">
+                            Портфолио
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.86603 12C8.48112 12.6667 7.51887 12.6667 7.13397 12L3.66987 6C3.28497 5.33333 3.7661 4.5 4.5359 4.5L11.4641 4.5C12.2339 4.5 12.715 5.33333 12.3301 6L8.86603 12Z" fill="white" fill-opacity="0.5"/>
+                            </svg>
+                        </div>
+                        <a href="/" class="header-nav_link">Вопрос - Ответ</a>
+                    </div>
                 </div>
-                <div class="header-nav_link flex">
-                    <a class="link-nav_menu">Акции</a>
-                    <a class="link-nav_menu">Каталог</a>
-                    <a class="link-nav_menu">Доставка</a>
-                    <a class="link-nav_menu">О нас</a>
-                    <a class="link-nav_menu">Контакты</a>
-                </div>
-                <div class="right-header__section flex">
-                    <div class="contacts-header column">
-                        <a href="tel:+79649522939" class="phone_el">8 (964) 952-29-39</a>
-                        <div class="work-time">ежедневно с 10:00-21:00</div>
+                <div class="header-right_section flex-c">
+                    <a href="tel:79674578833" class="header-phone">+7 (967) 457-88-33</a>
+                    <div class="header-order_btn button button_white">Заказать звонок</div>
+                    <div class="header-message_sect flex-c">
+                        <a href="/" class="header-mess_icon flex-c teleg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <path d="M13 0.5C6.1 0.5 0.5 6.1 0.5 13C0.5 19.9 6.1 25.5 13 25.5C19.9 25.5 25.5 19.9 25.5 13C25.5 6.1 19.9 0.5 13 0.5ZM18.8 9C18.6125 10.975 17.8 15.775 17.3875 17.9875C17.2125 18.925 16.8625 19.2375 16.5375 19.275C15.8125 19.3375 15.2625 18.8 14.5625 18.3375C13.4625 17.6125 12.8375 17.1625 11.775 16.4625C10.5375 15.65 11.3375 15.2 12.05 14.475C12.2375 14.2875 15.4375 11.375 15.5 11.1125C15.5087 11.0727 15.5075 11.0315 15.4966 10.9923C15.4857 10.953 15.4654 10.9171 15.4375 10.8875C15.3625 10.825 15.2625 10.85 15.175 10.8625C15.0625 10.8875 13.3125 12.05 9.9 14.35C9.4 14.6875 8.95 14.8625 8.55 14.85C8.1 14.8375 7.25 14.6 6.6125 14.3875C5.825 14.1375 5.2125 14 5.2625 13.5625C5.2875 13.3375 5.6 13.1125 6.1875 12.875C9.8375 11.2875 12.2625 10.2375 13.475 9.7375C16.95 8.2875 17.6625 8.0375 18.1375 8.0375C18.2375 8.0375 18.475 8.0625 18.625 8.1875C18.75 8.2875 18.7875 8.425 18.8 8.525C18.7875 8.6 18.8125 8.825 18.8 9Z" fill="white"/>
+                            </svg>
+                        </a>
+                        <a href="/" class="header-mess_icon flex-c wa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <path d="M21.8125 4.13757C20.6665 2.97998 19.3015 2.06216 17.797 1.43764C16.2926 0.813117 14.6789 0.4944 13.05 0.500074C6.225 0.500074 0.6625 6.06257 0.6625 12.8876C0.6625 15.0751 1.2375 17.2001 2.3125 19.0751L0.5625 25.5001L7.125 23.7751C8.9375 24.7626 10.975 25.2876 13.05 25.2876C19.875 25.2876 25.4375 19.7251 25.4375 12.9001C25.4375 9.58757 24.15 6.47507 21.8125 4.13757ZM13.05 23.1876C11.2 23.1876 9.3875 22.6876 7.8 21.7501L7.425 21.5251L3.525 22.5501L4.5625 18.7501L4.3125 18.3626C3.28468 16.7213 2.73893 14.8241 2.7375 12.8876C2.7375 7.21257 7.3625 2.58757 13.0375 2.58757C15.7875 2.58757 18.375 3.66257 20.3125 5.61257C21.2719 6.56753 22.0321 7.7034 22.5492 8.95436C23.0664 10.2053 23.33 11.5465 23.325 12.9001C23.35 18.5751 18.725 23.1876 13.05 23.1876ZM18.7 15.4876C18.3875 15.3376 16.8625 14.5876 16.5875 14.4751C16.3 14.3751 16.1 14.3251 15.8875 14.6251C15.675 14.9376 15.0875 15.6376 14.9125 15.8376C14.7375 16.0501 14.55 16.0751 14.2375 15.9126C13.925 15.7626 12.925 15.4251 11.75 14.3751C10.825 13.5501 10.2125 12.5376 10.025 12.2251C9.85 11.9126 10 11.7501 10.1625 11.5876C10.3 11.4501 10.475 11.2251 10.625 11.0501C10.775 10.8751 10.8375 10.7376 10.9375 10.5376C11.0375 10.3251 10.9875 10.1501 10.9125 10.0001C10.8375 9.85007 10.2125 8.32507 9.9625 7.70007C9.7125 7.10007 9.45 7.17507 9.2625 7.16257H8.6625C8.45 7.16257 8.125 7.23757 7.8375 7.55007C7.5625 7.86257 6.7625 8.61257 6.7625 10.1376C6.7625 11.6626 7.875 13.1376 8.025 13.3376C8.175 13.5501 10.2125 16.6751 13.3125 18.0126C14.05 18.3376 14.625 18.5251 15.075 18.6626C15.8125 18.9001 16.4875 18.8626 17.025 18.7876C17.625 18.7001 18.8625 18.0376 19.1125 17.3126C19.375 16.5876 19.375 15.9751 19.2875 15.8376C19.2 15.7001 19.0125 15.6376 18.7 15.4876Z" fill="white"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -51,109 +67,98 @@
     </div>
 </body>
 </html>
-   <div class="container">
-    <div class="first-slider_section">
-        <div class="akcii-swiper">
-            <div class=" akcii-wrapper">
-              <div class=" akcii-slide column flex-row">
-                <div class="akcii-text_block column">
-                <h1 class="akcii_title big-title">Дарим подарки на 12 000 рублей при покупке iPhone</h1>
-                <div class="button btn-present">Узнать подробнее</div>
-             </div>
-                <div class="presentImg">
-                    <img src="img/presentImg.png" alt="подарок">
-                </div>
+   <div class="cta wrapper">
+  <div class="swiper cta__swiper">
+    <div class="swiper-wrapper cta__wrapper">
+      <div class="swiper-slide cta__slide flex-c" style="background-image: url('img/cta1.png');">
+        <!-- <div class="cta-slide_img">
+          <img src="img/cta1.png" alt="cta">
+        </div> -->
+        <div class="container">
+            <div class="cta-content_sect column">
+                <div class="cta-title b-title">ТочноРемонт</div>
+              <div class="cta-promo__text">Точно в срок, согласно смете
+                и без переплат
               </div>
+              <div class="cta-btn button button_s20">Рассчитать смету</div>
             </div>
+           
         </div>
+      </div>
+      <div class="swiper-slide cta__slide flex-c" style="background-image: url('img/cta1.png');">
+        <!-- <div class="cta-slide_img">
+          <img src="img/cta1.png" alt="cta">
+        </div> -->
+        <div class="container">
+            <div class="cta-content_sect column">
+                <div class="cta-title b-title">ТочноРемонт</div>
+              <div class="cta-promo__text">Точно в срок, согласно смете
+                и без переплат
+              </div>
+              <div class="cta-btn button button_s20">Рассчитать смету</div>
+            </div>
+           
+        </div>
+      </div>
     </div>
+    <div class="container">
+      <div class="cta-swiper_pagination flex">
+        <div class="cta__arrow prev flex-c">
+          <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 13.5C1.17157 13.5 0.5 12.8284 0.5 12C0.5 11.1716 1.17157 10.5 2 10.5L2 13.5ZM31.0607 10.9393C31.6464 11.5251 31.6464 12.4749 31.0607 13.0607L21.5147 22.6066C20.9289 23.1924 19.9792 23.1924 19.3934 22.6066C18.8076 22.0208 18.8076 21.0711 19.3934 20.4853L27.8787 12L19.3934 3.51472C18.8076 2.92893 18.8076 1.97919 19.3934 1.3934C19.9792 0.807611 20.9289 0.807611 21.5147 1.3934L31.0607 10.9393ZM2 10.5L30 10.5V13.5L2 13.5L2 10.5Z" fill="#DE7940"/>
+          </svg>
+          </div>
+        <div class="cta__arrow next flex-c">
+          <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 13.5C1.17157 13.5 0.5 12.8284 0.5 12C0.5 11.1716 1.17157 10.5 2 10.5L2 13.5ZM31.0607 10.9393C31.6464 11.5251 31.6464 12.4749 31.0607 13.0607L21.5147 22.6066C20.9289 23.1924 19.9792 23.1924 19.3934 22.6066C18.8076 22.0208 18.8076 21.0711 19.3934 20.4853L27.8787 12L19.3934 3.51472C18.8076 2.92893 18.8076 1.97919 19.3934 1.3934C19.9792 0.807611 20.9289 0.807611 21.5147 1.3934L31.0607 10.9393ZM2 10.5L30 10.5V13.5L2 13.5L2 10.5Z" fill="#DE7940"/>
+          </svg>
+        </div>
+      </div>
+      <div class="swiper-pagination cta__pagination"></div>
+      <div class="cta__text-recomendation flex-c">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 14V16" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24.0001 6C25.803 5.99975 27.5869 6.3677 29.2425 7.0813C30.8982 7.7949 32.3906 8.8391 33.6284 10.1499C34.8662 11.4607 35.8232 13.0105 36.4408 14.7043C37.0584 16.398 37.3236 18.2001 37.2201 20L36.6601 30C36.4909 33.2419 35.0827 36.295 32.7266 38.5283C30.3705 40.7616 27.2465 42.0044 24.0001 42C20.7538 42.0044 17.6298 40.7616 15.2737 38.5283C12.9175 36.295 11.5094 33.2419 11.3401 30L10.7801 20C10.6766 18.2001 10.9418 16.398 11.5595 14.7043C12.1771 13.0105 13.1341 11.4607 14.3719 10.1499C15.6097 8.8391 17.1021 7.7949 18.7577 7.0813C20.4134 6.3677 22.1973 5.99975 24.0001 6Z" stroke="white" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Листайте ниже и узнайте подробнее
+    </div>
+  </div>
+   
+  </div>
 </div>
    <div class="container">
-    <div class="third-block_section flex">
-        <div class="third-block__card column">
-            <div class="title__card middle-title">Trade-in</div>
-            <div class="cards__description">Сдайте свое старое устройство и получите скидку на новое!</div>
-            <div class="btn-stocks button">Рассчитать скидку</div>
-        </div>
-        <div class="third-block__card column">
-            <div class="title__card middle-title">Trade-in</div>
-            <div class="cards__description">Сдайте свое старое устройство и получите скидку на новое!</div>
-            <div class="btn-stocks button">Рассчитать скидку</div>
-        </div>
-    </div>
-</div>
-   <div class="products__container">
-    <div class="container">
-        <div class="products__category flex-row">
-            <div class="products__category_block column">
-                <div class="products__category_el">
-                    <img src="" alt="">
-                </div>
-                <div class="products__category_name">iPhone</div>
+    <div class="description-wrapper description indent flex-row">
+        <div class="description__card column">
+            <div class="description__card-content">
+                <div class="description-card_title card-title">Фиксированная смета</div>
+                <div class="description-card_text card-text">Стоимость работ не растет в процессе ремонта, смета закреплена в договоре подряда</div>
             </div>
-            <div class="products__category_block column">
-                <div class="products__category_el">
-                    <img src="" alt="">
-                </div>
-                <div class="products__category_name">iPhone</div>
-            </div>
-            <div class="products__category_block column">
-                <div class="products__category_el">
-                    <img src="" alt="">
-                </div>
-                <div class="products__category_name">iPhone</div>
-            </div>
-
-            <div class="products__category_block column">
-                <div class="products__category_el">
-                    <img src="" alt="">
-                </div>
-                <div class="products__category_name">iPhone</div>
-            </div>
-            <div class="products__category_block column">
-                <div class="products__category_el">
-                    <img src="" alt="">
-                </div>
-                <div class="products__category_name">iPhone</div>
-            </div>
-            <div class="products__category_block column">
-                <div class="products__category_el">
-                    <img src="" alt="">
-                </div>
-                <div class="products__category_name">iPhone</div>
-            </div>
-            <div class="products__category_block column">
-                <div class="products__category_el">
-                    <img src="" alt="">
-                </div>
-                <div class="products__category_name">iPhone</div>
+            <div class="description-card_img">
+                <img src="img/smeta.png" alt="смета">
             </div>
         </div>
-        <div class="items flex-row">
-            <div class="items__card column">
-                <div class="items__title">Apple iPhone 15 Pro Max</div>
-                    <div class="items__img">
-                        <img src="" alt="фото">
-                    </div>
-                <div class="items__color-section">
-                    <div class="items__color active"></div>
-                </div>
-                <div class="items__memory_section flex">
-                    <div class="items__memory_value active">128 Гб</div>
-                    <div class="items__memory_value">512 Гб</div>
-                    <div class="items__memory_value">512 Тб</div>
-                </div>
-                <div class="items__price-section flex-row">
-                    <div class="items__price">122 990 руб.</div>
-                    <div class="items__btn button button_small">Купить</div>
-                </div>
-
+        <div class="description__card column">
+            <div class="description__card-content">
+            <div class="description-card_title card-title">Оплата по факту работ</div>
+            <div class="description-card_text card-text">Не взимаем предоплату – платите только за результат, предварительно убедившись, что все устраивает.</div>
+            </div>
+            <div class="description-card_img">
+                <img src="img/down.png" alt="смета">
+            </div>
+        </div>
+        <div class="description__card orange column">
+            <div class="description__card-content">
+                <div class="description-card_title card-title">Прозрачно и без переплат</div>
+                <div class="description-card_text card-text">Начните реморт сейчас, а платите потом!</div>
+            </div>
+            <div class="description-btn_section flex">
+                <div class="description-card__btn button_s20 button">Рассчитать смету</div>
             </div>
         </div>
     </div>
 </div>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240411165156"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240416170826"></script>
 <footer class="footer"></footer>
-   <script defer src="js/script.js?_v=20240411165156"></script>
+   <script defer src="js/script.js?_v=20240416170826"></script>
 </body>
 </html>

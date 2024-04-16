@@ -1,0 +1,30 @@
+.description{
+    gap: 24px;
+    &__card{
+        padding: 32px;
+        background-color: #F8F8F8;
+        border-radius: 32px;
+        min-height: 384px;
+        width: 33%;
+       justify-content: space-between;
+    }
+    &-card_text{
+        padding-top: 32px;
+    }
+    &-card_img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    &__card.orange{
+        background: #DE7940;
+        color: white;
+    }
+    &-card__btn{
+        background: white;
+        color: black;
+    }
+    &-btn_section{
+        justify-content: flex-end;
+    }
+}
